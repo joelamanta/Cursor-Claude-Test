@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CONTINU.PHOTOS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">CONTINU.PHOTOS</a>
+    <ul class="nav-links">
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-label">DESIGNER &amp; PHOTOGRAPHER</div>
+    <h1 class="hero-title">CONTINU<span class="dot">.</span>PHOTOS</h1>
+    <p class="hero-sub">Visual work that doesn't ask for permission.</p>
+    <a href="#projects" class="hero-cta">VIEW WORK ↓</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <span class="section-label">ABOUT</span>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Continu.photos is the visual practice of a designer and photographer
+          obsessed with contrast, restraint, and atmosphere. The work sits at the
+          intersection of product photography and graphic design — built for
+          brands that want to say more by showing less.
+        </p>
+        <p>
+          Based wherever the light is right. Available for brand campaigns,
+          product photography, and creative direction.
+        </p>
+      </div>
+      <div class="about-tags">
+        <span>PRODUCT PHOTOGRAPHY</span>
+        <span>CREATIVE DIRECTION</span>
+        <span>GRAPHIC DESIGN</span>
+        <span>BRAND VISUAL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <span class="section-label">PROJECTS</span>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card" data-project="accessories">
+        <div class="project-img-wrap">
+          <img src="assets/images/accessories/cover.jpg" alt="Escaldi Accessories" loading="lazy" />
+          <div class="project-overlay">
+            <span>VIEW PROJECT →</span>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="project-category">PRODUCT PHOTOGRAPHY</span>
+          <h3 class="project-title">ESCALDI — ACCESSORIES</h3>
+        </div>
+      </div>
+
+      <div class="project-card" data-project="inferno-emerald">
+        <div class="project-img-wrap">
+          <img src="assets/images/inferno-emerald/cover.jpg" alt="Escaldi Inferno Emerald" loading="lazy" />
+          <div class="project-overlay">
+            <span>VIEW PROJECT →</span>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="project-category">PRODUCT PHOTOGRAPHY</span>
+          <h3 class="project-title">ESCALDI — INFERNO EMERALD</h3>
+        </div>
+      </div>
+
+      <div class="project-card" data-project="terra-pro">
+        <div class="project-img-wrap">
+          <img src="assets/images/terra-pro/cover.jpg" alt="Escaldi Terra Pro" loading="lazy" />
+          <div class="project-overlay">
+            <span>VIEW PROJECT →</span>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="project-category">PRODUCT PHOTOGRAPHY</span>
+          <h3 class="project-title">ESCALDI — TERRA PRO</h3>
+        </div>
+      </div>
+
+      <div class="project-card" data-project="genesis">
+        <div class="project-img-wrap">
+          <img src="assets/images/genesis/cover.jpg" alt="Genesis Mousepads" loading="lazy" />
+          <div class="project-overlay">
+            <span>VIEW PROJECT →</span>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="project-category">PRODUCT PHOTOGRAPHY</span>
+          <h3 class="project-title">GENESIS MOUSEPADS × ESCALDI</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <span class="section-label">CONTACT</span>
+    </div>
+    <div class="contact-content">
+      <p class="contact-cta">Let's work together.</p>
+      <a href="mailto:joelwiraatmadja@gmail.com" class="contact-email">joelwiraatmadja@gmail.com</a>
+      <div class="contact-links">
+        <a href="https://instagram.com/continu.photos" target="_blank" rel="noopener">INSTAGRAM ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>&copy; 2026 CONTINU.PHOTOS</span>
+    <a href="#" class="back-top">BACK TO TOP ↑</a>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lb-close">&times;</button>
+    <button class="lb-prev" id="lb-prev">&#8592;</button>
+    <button class="lb-next" id="lb-next">&#8594;</button>
+    <div class="lb-img-wrap">
+      <img src="" alt="" id="lb-img" />
+    </div>
+    <div class="lb-info">
+      <span id="lb-title"></span>
+      <span id="lb-count"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
